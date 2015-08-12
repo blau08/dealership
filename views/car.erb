@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars List</title>
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body style="font-family: 'Play', serif;font-size: 35px;">
+    <div class="container">
+<h1><%= @car.make() %></h1>
+<h1><%= @car.model() %></h1>
+<h1><%= @car.year() %></h1>
+
+  <a href="/" class="btn btn-primary">Home</a>
+</div>
+</body>
+</html>

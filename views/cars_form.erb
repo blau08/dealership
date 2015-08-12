@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a new car</title>
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body style="font-family: 'Play', serif;font-size: 35px;">
+    <div class="container">
+
+<h1 style="text-align: center; margin-bottom: 50px; font-size: 55px;">Add a Car <i class="fa fa-tasks"></i></h1>
+
+<form action="/cars" method="post" class="form-group">
+  <label for="make">Car's make:&nbsp;&nbsp;</label>
+  <input id="make" name="make" type="text">
+
+  <label for="model">Car's model:</label>
+  <input id="model" name="model" type="text">
+
+  <label for="year">Car's year:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input id="year" name="year" type="text">
+<br /><br />
+  <button type="submit" class="btn btn-danger">Add car</button>
+</form>
+
+</div>
+</body>
+</html>

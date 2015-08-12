@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars List</title>
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body background="/img/car_background_1.jpg" style="font-family: 'Play', serif;font-size: 35px;">
+    <div class="container">
+
+      <h1 style="text-align: center; margin-bottom: 50px; color:#fff;">All the cars in <b><%= @dealership.name %></b> dealership:</h1>
+
+        <ul>
+        <% @dealership.cars().each() do |car| %>
+          <li><a href="/cars/<%= car.id() %>"><%= car.make() %> <%= car.model() %> <%= car.year() %></a></li>
+        <% end %>
+        </ul>
+
+        <a href="/dealerships/<%= @dealership.id%>/cars/new" class="btn btn-warning">Add a new car</a>
+        <a href="/" class="btn btn-primary">Return to Main Page</a>
+
+    </div>
+  </body>
+</html>
